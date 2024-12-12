@@ -1,0 +1,18 @@
+@import './base.css';
+
+#app {
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: var(--color-interactable);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: var(--color-interactable-hover);
+  }
+}
