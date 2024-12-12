@@ -8,7 +8,6 @@ const packageUpdater = require('puzzle-host-package-updater');
   await cp(path.resolve(__dirname, "./src"), path.resolve(__dirname, "../../src"), { recursive: true });
   await copyFile(path.resolve(__dirname, "./index.html"), path.resolve(__dirname, "../../index.html"));
   await copyFile(path.resolve(__dirname, "./README.md"), path.resolve(__dirname, "../../README.md"));
-  await copyFile(path.resolve(__dirname, "./.env.local"), path.resolve(__dirname, "../../.env.local"));
   await copyFile(path.resolve(__dirname, "./tsconfig.app.json"), path.resolve(__dirname, "../../tsconfig.app.json"));
   await copyFile(path.resolve(__dirname, "./tsconfig.json"), path.resolve(__dirname, "../../tsconfig.json"));
   await copyFile(path.resolve(__dirname, "./tsconfig.node.json"), path.resolve(__dirname, "../../tsconfig.node.json"));
